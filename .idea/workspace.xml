@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec0994f-a447-4cae-8e88-35cd3ce46021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/AdditionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/ArithmeticOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/DivisionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/MultplicationOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/NewArithemticOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/SubtractionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/calculator/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/Courses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/GradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradecalculator/CourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradecalculator/GradeCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +45,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ggami/Documents/GitHub/oop-practice/src/test/java/org&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.gradecalculator" />
       <recent name="org.calculator" />
       <recent name="org.example" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ggami\Documents\GitHub\oop-practice\src\test\java\org" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -83,7 +83,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest">
+  <component name="RunManager" selected="JUnit.GradeCalculatorTest">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
@@ -115,33 +115,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordValidatorTest.validatePasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.gradecalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PasswordValidatorTest" />
-      <option name="METHOD_NAME" value="validatePasswordTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.gradecalculator" />
+      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.CourseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.passwordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GradeCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.gradecalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.UserTest" />
-      <option name="METHOD_NAME" value="passwordTest" />
+      <option name="PACKAGE_NAME" value="org.gradecalculator" />
+      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.GradeCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GradeCalculatorTest.calculateGradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gradecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gradecalculator" />
+      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.GradeCalculatorTest" />
+      <option name="METHOD_NAME" value="calculateGradeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,10 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GradeCalculatorTest" />
+        <item itemvalue="JUnit.GradeCalculatorTest.calculateGradeTest" />
+        <item itemvalue="JUnit.CourseTest" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="JUnit.CalculatorTest.calculateTest" />
-        <item itemvalue="JUnit.UserTest.passwordTest" />
-        <item itemvalue="JUnit.PasswordValidatorTest.validatePasswordTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +181,9 @@
       <updated>1675599873194</updated>
       <workItem from="1675599874421" duration="11849000" />
       <workItem from="1675942903796" duration="10473000" />
+      <workItem from="1676054637934" duration="10000" />
+      <workItem from="1676054693549" duration="13082000" />
+      <workItem from="1676405012888" duration="621000" />
     </task>
     <servers />
   </component>
